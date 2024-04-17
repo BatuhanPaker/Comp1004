@@ -66,6 +66,6 @@ function displayMessage(username, message) {
     messageElement.textContent = message; // Add message text.
     messageContainer.appendChild(usernameElement);
     messageContainer.appendChild(messageElement);
-    chatWindow.appendChild(messageContainer); // Append message container to chat window.
-    chatWindow.scrollTop = chatWindow.scrollHeight; // Auto-scroll the latest message.
+    chatWindow.appendChild(messageContainer); 
+    chatWindow.scrollTop = chatWindow.scrollHeight; 
 }
