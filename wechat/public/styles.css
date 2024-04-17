@@ -1,0 +1,111 @@
+/* Styling for body, setting font, background, text color. */
+/*I am trying to make a neon colored application. */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+#chat-container {
+    width: 80%;
+    height: 90vh;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#chat-header {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(to right, #00b3ff, #ec00ff);
+    color: #ffffff;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+#chat-messages {
+    overflow-y: auto;
+    flex-grow: 1;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    #input-container input[type="text"],
+    #input-container button {
+        font-family: 'Lato', sans-serif;
+        padding: 15px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        background-color: #00b3ff;
+        color: #ffffff;
+        font-size: 16px;
+        outline: none;
+    }
+ 
+    #input-container input[type="text"] {
+        background-color: #262626;
+        color: #ffffff;
+    }
+   
+    #input-container button {
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        #input-container button:hover {
+            background-color: #ec00ff;
+        }
+
+.message {
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-left: 5px solid #00b3ff;
+    background-color: #1e1e1e;
+}
+
+.username {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #00b3ff;
+}
+
+#chat-container::before,
+#chat-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+#chat-container::before {
+    left: -30px;
+}
+
+#chat-container::after {
+    right: -30px;
+}

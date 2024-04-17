@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Google form for a bolder font. -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Chatter</title> <!-- WebPage Title. -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to css/ styling. -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />  <!-- This is a favicon to make an icon on the webpage. -->
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">
+            <h1>SPA Chatter</h1> <!-- Main heading.  -->
+        </div>
+        <div id="chat-messages"></div> <!-- Chat container. -->
+        <div id="input-container">
+            <input type="text" id="username-input" placeholder="Your Username:"> <!-- Username input. -->
+            <button id="set-username-button">Set Username</button> <!-- Username button. -->
+            <input type="text" id="message-input" placeholder="Type a message..."> <!-- Message input. -->
+            <button id="send-button">Send</button> <!-- Message button -->
+            <button id="save-messages-button">Save Messages</button> <!-- Save button. -->
+            <button id="load-messages-button">Load Messages</button> <!-- Load button. -->
+        </div>
+    </div>
+    <!-- Including socket.io for real-time communication. -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Link to client-side logic. -->
+    <script src="script.js"></script>
+</body>
+</html>
